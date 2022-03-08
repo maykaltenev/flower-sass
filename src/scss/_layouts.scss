@@ -9,7 +9,8 @@ body {
     position: relative;
     span {
       position: absolute;
-      top: 100%;
+      top: 7.5em;
+      left: 0.5em;
     }
   }
   .flower-color-2 {
@@ -17,57 +18,67 @@ body {
     position: relative;
     span {
       position: absolute;
-      opacity: 1;
-      z-index: 1;
-      top: 140%;
-      left: 45%;
+      top: 7.5em;
+      left: 2em;
     }
   }
   .flower-color-3 {
     @include flower-size(3em, 3em, $gray-blue, $light-blue, 1rem);
+    position: relative;
     span {
-      top: 11rem;
-      left: 27.5rem;
+      position: absolute;
+      top: 4.5em;
+      left: 1em;
     }
   }
   .flower-color-4 {
     @include flower-size(8em, 8em, $gray-blue, $light-blue, 2em);
+    position: relative;
     span {
-      top: 18rem;
-      left: 36.5rem;
+      position: absolute;
+      top: 10.5em;
+      left: 3.5em;
     }
   }
   .flower-color-5 {
     @include flower-size(5em, 5em, $gray-blue, $light-blue, 5rem);
+    position: relative;
     span {
-      top: 21rem;
-      left: 51rem;
+      position: absolute;
+      top: 10.5em;
+      left: 2em;
     }
   }
   .flower-color-6 {
     @include flower-size(2em, 2em, $gray-blue, $light-blue, 1rem);
+    position: relative;
     span {
-      top: 10rem;
-      left: 61.5rem;
+      position: absolute;
+      top: 3.5em;
+      left: 0.5em;
     }
   }
   .flower-color-7 {
     @include flower-size(9em, 9em, $gray-blue, $light-blue, 1rem);
+    position: relative;
     span {
-      top: 17rem;
-      left: 69.5rem;
+      position: absolute;
+      top: 10.5em;
+      left: 4em;
     }
   }
   .flower-color-8 {
     @include flower-size(6em, 6em, $gray-blue, $light-blue, 5rem);
+    position: relative;
     span {
-      top: 22rem;
-      left: 83.5rem;
+      position: absolute;
+      top: 11em;
+      left: 2em;
     }
   }
 }
 .flower {
-  animation: bigger 2s ease-in 3s infinite;
+  //   animation: bigger 2s ease-in 3s infinite;
   span {
     animation: spin 2s ease-in 3s infinite;
     background: $blue;
