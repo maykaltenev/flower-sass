@@ -1,0 +1,106 @@
+body {
+  background-color: rgba(35, 54, 65, 0.749);
+
+  display: flex;
+  justify-content: space-between;
+  padding: 5em 2rem;
+
+  .flower-color-1 {
+    @include flower-size(2em, 2em, $gray-blue, $light-blue, 5rem);
+    span {
+      top: 18rem;
+    }
+  }
+  .flower-color-2 {
+    @include flower-size(5em, 5em, $gray-blue, $light-blue, 2rem);
+    span {
+      top: 15rem;
+      left: 19.5rem;
+    }
+  }
+  .flower-color-3 {
+    @include flower-size(3em, 3em, $gray-blue, $light-blue, 1rem);
+    span {
+      top: 11rem;
+      left: 27.5rem;
+    }
+  }
+  .flower-color-4 {
+    @include flower-size(8em, 8em, $gray-blue, $light-blue, 2em);
+    span {
+      top: 11rem;
+      left: 14rem;
+    }
+  }
+  .flower-color-5 {
+    @include flower-size(5em, 5em, $gray-blue, $light-blue, 5rem);
+  }
+  .flower-color-6 {
+    @include flower-size(2em, 2em, $gray-blue, $light-blue, 1rem);
+  }
+  .flower-color-7 {
+    @include flower-size(9em, 9em, $gray-blue, $light-blue, 1rem);
+  }
+  .flower-color-8 {
+    @include flower-size(6em, 6em, $gray-blue, $light-blue, 5rem);
+  }
+}
+.flower {
+  span {
+    top: 15rem;
+    background: $blue;
+    width: 0.3em;
+    z-index: 5;
+    height: 15em;
+    display: block;
+    position: absolute;
+    &:after {
+      content: "";
+      width: 3em;
+      height: 3em;
+      display: block;
+      background: darken($silver-blue, 5);
+      border-radius: 2em 0em 2em 0em;
+      box-shadow: 0 0 0 0.2em darken($dark-blue, 8) inset;
+      z-index: 0;
+      top: 1em;
+      left: 0.5em;
+      position: absolute;
+    }
+    &:before {
+      content: "";
+      width: 3em;
+      height: 3em;
+      display: block;
+      background: darken($blue, 7);
+      border-radius: 0em 2em 0em 2em;
+      box-shadow: 0 0 0 0.2em darken($light-blue, 5);
+      z-index: 0;
+      position: absolute;
+      left: -3em;
+      top: 5em;
+    }
+  }
+}
+
+//   @include flower-size(2em, 5em, 3em, $blue, $blue, 0.7em, 2);
+// }
+// .flower-color-1 {
+//   @include flower-size(4em, 5em, 6em, $gray-blue, $blue, 1em, 1);
+// }
+// .flower-color-2 {
+//   @include flower-size(6em, 5em, 1em, $gray-blue, $blue, 1em, 2);
+// }
+// .flower-color-3 {
+//   @include flower-size(3em, 5em, 0em, $gray-blue, $blue, 1.2em, 0);
+// }
+// .flower-color-4 {
+//   @include flower-size(2em, 2em, 3em, $gray-blue, $blue, 3em, 1);
+// }
+// .flower-color-5 {
+//   @include flower-size(3em, 3em, 0em, $gray-blue, $blue, 1.2em, 1);
+// }
+// .flower-color-6 {
+//   @include flower-size(4em, 4em, 2em, $gray-blue, $blue, 0.7em, 2);
+// }
+//   }

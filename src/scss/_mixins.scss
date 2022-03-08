@@ -1,0 +1,13 @@
+@mixin flower-size($width, $height, $background, $border-color, $border-width) {
+  height: $height;
+  width: $width;
+
+  background-color: $background;
+  border-radius: $width * 5;
+  border: $border-width solid $border-color;
+  box-shadow: 0 0 0 0.5em lighten($border-color, random(4));
+  // span {
+  //   top: $width + $border-width + 0.4em;
+  //   left: 0.4rem;
+  // }
+}
