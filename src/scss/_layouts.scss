@@ -1,86 +1,89 @@
 body {
   background-color: rgba(35, 54, 65, 0.749);
-  display: flex;
-  justify-content: space-between;
   padding: 5em 2rem;
+  .bucket {
+    display: flex;
 
-  .flower-color-1 {
-    @include flower-size(2em, 2em, $gray-blue, $light-blue, 5rem);
-    position: relative;
-    span {
-      position: absolute;
-      top: 7.5em;
-      left: 0.5em;
+    padding: 5em 2rem;
+
+    .flower-color-1 {
+      @include flower-size(2em, 2em, $gray-blue, $light-blue, 5rem);
+      position: relative;
+      span {
+        position: absolute;
+        top: 7.5em;
+        left: 0.5em;
+      }
     }
-  }
-  .flower-color-2 {
-    @include flower-size(5em, 5em, $gray-blue, $light-blue, 2rem);
-    position: relative;
-    span {
-      position: absolute;
-      top: 7.5em;
-      left: 2em;
+    .flower-color-2 {
+      @include flower-size(5em, 5em, $gray-blue, $light-blue, 2rem);
+      position: relative;
+      span {
+        position: absolute;
+        top: 7.5em;
+        left: 2em;
+      }
     }
-  }
-  .flower-color-3 {
-    @include flower-size(3em, 3em, $gray-blue, $light-blue, 1rem);
-    position: relative;
-    span {
-      position: absolute;
-      top: 4.5em;
-      left: 1em;
+    .flower-color-3 {
+      @include flower-size(3em, 3em, $gray-blue, $light-blue, 1rem);
+      position: relative;
+      span {
+        position: absolute;
+        top: 4.5em;
+        left: 1em;
+      }
     }
-  }
-  .flower-color-4 {
-    @include flower-size(8em, 8em, $gray-blue, $light-blue, 2em);
-    position: relative;
-    span {
-      position: absolute;
-      top: 10.5em;
-      left: 3.5em;
+    .flower-color-4 {
+      @include flower-size(8em, 8em, $gray-blue, $light-blue, 2em);
+      position: relative;
+      span {
+        position: absolute;
+        top: 10.5em;
+        left: 3.5em;
+      }
     }
-  }
-  .flower-color-5 {
-    @include flower-size(5em, 5em, $gray-blue, $light-blue, 5rem);
-    position: relative;
-    span {
-      position: absolute;
-      top: 10.5em;
-      left: 2em;
+    .flower-color-5 {
+      @include flower-size(5em, 5em, $gray-blue, $light-blue, 5rem);
+      position: relative;
+      span {
+        position: absolute;
+        top: 10.5em;
+        left: 2em;
+      }
     }
-  }
-  .flower-color-6 {
-    @include flower-size(2em, 2em, $gray-blue, $light-blue, 1rem);
-    position: relative;
-    span {
-      position: absolute;
-      top: 3.5em;
-      left: 0.5em;
+    .flower-color-6 {
+      @include flower-size(2em, 2em, $gray-blue, $light-blue, 1rem);
+      position: relative;
+      span {
+        position: absolute;
+        top: 3.5em;
+        left: 0.5em;
+      }
     }
-  }
-  .flower-color-7 {
-    @include flower-size(9em, 9em, $gray-blue, $light-blue, 1rem);
-    position: relative;
-    span {
-      position: absolute;
-      top: 10.5em;
-      left: 4em;
+    .flower-color-7 {
+      @include flower-size(9em, 9em, $gray-blue, $light-blue, 1rem);
+      position: relative;
+      span {
+        position: absolute;
+        top: 10.5em;
+        left: 4em;
+      }
+      animation: spin-left 19s ease-in infinite;
     }
-  }
-  .flower-color-8 {
-    @include flower-size(6em, 6em, $gray-blue, $light-blue, 5rem);
-    position: relative;
-    span {
-      position: absolute;
-      top: 11em;
-      left: 2em;
+    .flower-color-8 {
+      @include flower-size(6em, 6em, $gray-blue, $light-blue, 5rem);
+      position: relative;
+      span {
+        position: absolute;
+        top: 11em;
+        left: 2em;
+      }
     }
   }
 }
 .flower {
-  //   animation: bigger 2s ease-in 3s infinite;
+  animation: spin-left 19s ease-in infinite;
   span {
-    animation: spin 2s ease-in 3s infinite;
     background: $blue;
     width: 0.3em;
     z-index: 5;
@@ -113,28 +116,5 @@ body {
       left: -3em;
       top: 5em;
     }
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotateY(0) rotateY(0);
-  }
-  50% {
-    transform: rotateY(180deg) rotateY(180deg);
-  }
-  100% {
-    transform: rotateY(360deg) rotateY(360deg);
-  }
-}
-@keyframes bigger {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(0.5);
   }
 }
